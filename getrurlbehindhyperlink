@@ -1,0 +1,11 @@
+Create a VBA module with the following code:
+
+'''
+Public Function GetURL(c As Range) As String
+    On Error Resume Next
+    GetURL = c.Hyperlinks(1).Address
+End Function
+'''
+
+To use, enter the following into any cell:
+=GetURL(A1)
